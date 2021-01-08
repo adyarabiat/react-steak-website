@@ -3,7 +3,7 @@ import { NavLink as Link } from "react-router-dom";
 import { GiSteak } from "react-icons/gi";
 
 export const Nav = styled.nav`
-  background: #ffe4c4;
+  background: transparent;
   height: 80px;
   display: flex;
   justify-content: center;
@@ -11,8 +11,8 @@ export const Nav = styled.nav`
 `;
 
 export const NavLink = styled(Link)`
-  color: #010101;
-  font-size: 2rem;
+  color: #fff;
+  font-size: 3rem;
   display: flex;
   align-items: center;
   text-decoration: none;
@@ -31,7 +31,10 @@ export const NavIcon = styled.div`
   top: 0;
   right: 0;
   cursor: pointer;
-  color: #010101;
+  color: #fff;
+  &:hover {
+    color: #a52a2a;
+  }
 
   p {
     transform: translate(-175%, 100%);
